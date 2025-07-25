@@ -54,18 +54,20 @@
     .card:hover {
       transform: translateY(-5px);
     }
+    .table-wrapper {
+      overflow-x: auto;
+    }
     table {
       width: 100%;
       border-collapse: collapse;
       margin-top: 20px;
-      overflow-x: auto;
-      display: block;
+      min-width: 600px;
     }
     th, td {
       border: 1px solid #444;
       padding: 10px;
       text-align: center;
-      font-size: 0.9rem;
+      font-size: 0.95rem;
       white-space: nowrap;
     }
     th {
@@ -121,9 +123,12 @@
       .slide img {
         max-height: 240px;
       }
+      .table-wrapper {
+        overflow-x: auto;
+      }
       th, td {
-        padding: 6px;
-        font-size: 0.75rem;
+        padding: 8px;
+        font-size: 0.85rem;
       }
     }
   </style>
@@ -156,14 +161,16 @@
 <section id="trades">
   <div class="card">
     <h2>📊 Recent Trade Results</h2>
-    <table>
-      <tr><th>Date</th><th>Coin</th><th>Type</th><th>Entry</th><th>TP</th><th>Result</th></tr>
-      <tr><td>2025-07-24</td><td>PEPE/USDT</td><td>Long</td><td>0.0142</td><td>0.0158</td><td class="highlight">+10%</td></tr>
-      <tr><td>2025-07-23</td><td>HOOK/USDT</td><td>Short</td><td>0.96</td><td>0.91</td><td class="highlight">+6%</td></tr>
-      <tr><td>2025-07-22</td><td>BTC/USDT</td><td>Long</td><td>29500</td><td>31000</td><td class="highlight">+5%</td></tr>
-      <tr><td>2025-07-21</td><td>ETH/USDT</td><td>Long</td><td>1800</td><td>1900</td><td class="highlight">+5.5%</td></tr>
-      <tr><td>2025-07-20</td><td>SOL/USDT</td><td>Short</td><td>27.5</td><td>25.0</td><td class="highlight">+9%</td></tr>
-    </table>
+    <div class="table-wrapper">
+      <table>
+        <tr><th>Date</th><th>Coin</th><th>Type</th><th>Entry</th><th>TP</th><th>Result</th></tr>
+        <tr><td>2025-07-24</td><td>PEPE/USDT</td><td>Long</td><td>0.0142</td><td>0.0158</td><td class="highlight">+10%</td></tr>
+        <tr><td>2025-07-23</td><td>HOOK/USDT</td><td>Short</td><td>0.96</td><td>0.91</td><td class="highlight">+6%</td></tr>
+        <tr><td>2025-07-22</td><td>BTC/USDT</td><td>Long</td><td>29500</td><td>31000</td><td class="highlight">+5%</td></tr>
+        <tr><td>2025-07-21</td><td>ETH/USDT</td><td>Long</td><td>1800</td><td>1900</td><td class="highlight">+5.5%</td></tr>
+        <tr><td>2025-07-20</td><td>SOL/USDT</td><td>Short</td><td>27.5</td><td>25.0</td><td class="highlight">+9%</td></tr>
+      </table>
+    </div>
   </div>
 </section>
 

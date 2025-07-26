@@ -1,116 +1,81 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sample Website</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Telly Crypto - Premium Signals</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <header class="main-header">
     <div class="container">
-      <div class="logo">My<span>Site</span></div>
+      <h1 class="logo">Telly<span>Crypto</span></h1>
       <nav>
         <ul>
           <li><a href="#home">Home</a></li>
-          <li><a href="#results">Results</a></li>
-          <li><a href="#premium">Premium</a></li>
+          <li><a href="#results">Trade Results</a></li>
+          <li><a href="#premium">Premium Group</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <section class="hero-section">
+  <section id="home" class="hero-section">
     <div class="container">
-      <h2>Welcome to MySite</h2>
-      <p>Explore our premium trading signals and join our elite community!</p>
+      <h2>Welcome to Telly Crypto</h2>
+      <p>Accurate signals, expert strategies, and real-time crypto alerts. Let your trades speak with confidence.</p>
+      <div class="btc-widget">
+        <iframe src="https://widgets.coingecko.com/coingecko-coin-price-marquee-widget?coin_ids=bitcoin&currency=usd&locale=en" width="100%" height="36" frameborder="0" style="margin-top: 20px;"></iframe>
+      </div>
     </div>
   </section>
 
-  <section class="trade-results-section">
+  <section id="results" class="results-section">
     <div class="container">
-      <h2>Latest Trade Results</h2>
-      <div class="card-table trade-results-table">
+      <h2>📊 Latest Trade Results</h2>
+      <div class="card-table">
         <table>
           <thead>
-            <tr>
-              <th>Date</th>
-              <th>Pair</th>
-              <th>Action</th>
-              <th>Entry Price</th>
-              <th>Take Profit</th>
-              <th>Stop Loss</th>
-              <th>Result</th>
-            </tr>
+            <tr><th>Coin</th><th>Type</th><th>Entry</th><th>Target</th><th>Status</th></tr>
           </thead>
           <tbody>
-            <tr>
-              <td>2025-07-25</td>
-              <td>EUR/USD</td>
-              <td>Buy</td>
-              <td>1.1509</td>
-              <td>1.1597</td>
-              <td>1.1475</td>
-              <td>+88 pips</td>
-            </tr>
-            <tr>
-              <td>2025-07-24</td>
-              <td>XAU/USD</td>
-              <td>Sell</td>
-              <td>1800.50</td>
-              <td>1790.00</td>
-              <td>1810.00</td>
-              <td>+1050 points</td>
-            </tr>
-            <tr>
-              <td>2025-07-23</td>
-              <td>GBP/USD</td>
-              <td>Buy</td>
-              <td>1.3600</td>
-              <td>1.3650</td>
-              <td>1.3550</td>
-              <td>-50 pips</td>
-            </tr>
+            <tr><td>BTC/USDT</td><td>Long</td><td>28,500</td><td>30,000</td><td>✅ Hit</td></tr>
+            <tr><td>ETH/USDT</td><td>Short</td><td>1,900</td><td>1,780</td><td>✅ Hit</td></tr>
+            <tr><td>BNB/USDT</td><td>Long</td><td>250</td><td>270</td><td>❌ SL</td></tr>
           </tbody>
         </table>
       </div>
     </div>
   </section>
 
-  <section class="premium-section">
+  <section id="premium" class="premium-section">
     <div class="container">
       <h2>💎 Premium Signal Group</h2>
       <div class="premium-card">
-        <div>
-          <p>Join our exclusive Premium Signal Group for high-accuracy trading signals and expert insights.</p>
-          <ul>
-            <li>Daily high-probability trading signals</li>
-            <li>Exclusive market analysis and updates</li>
-            <li>24/7 support via Telegram</li>
-            <li>Access to our trading community</li>
-          </ul>
-          <a href="#contact" class="cta-button">Join Now</a>
-        </div>
+        <p>Join our VIP group for daily signals, expert analysis, and 1-on-1 mentorship from Taimoor Ali.</p>
+        <p><strong>📱 WhatsApp:</strong> +92XXXXXXXXXX</p>
+        <p><strong>📢 Telegram:</strong> @TellyCrypto</p>
+        <p><strong>📈 Success Rate:</strong> 95%+</p>
       </div>
     </div>
   </section>
 
-  <section class="contact-section">
+  <section id="contact" class="contact-section">
     <div class="container">
-      <h2>Contact Us</h2>
+      <h2>📩 Contact Us</h2>
       <div class="contact-card">
         <div>
-          <p>Join our premium signal group or reach out for queries.</p>
-          <p>Email: support@mysite.com</p>
-          <p>Telegram: @MySiteSignals</p>
+          <p>📧 <strong>Email:</strong><br> contact@tellycrypto.com</p>
+          <p>📱 <strong>Instagram:</strong><br> @tellycrypto</p>
+          <p>🌐 <strong>Website:</strong><br> www.tellycrypto.com</p>
         </div>
         <div>
           <form>
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message" rows="4" required></textarea>
+            <input type="text" placeholder="Your Name" required />
+            <input type="email" placeholder="Your Email" required />
+            <textarea placeholder="Your Message" rows="4"></textarea>
             <button type="submit">Send Message</button>
           </form>
         </div>
@@ -119,8 +84,9 @@
   </section>
 
   <footer class="main-footer">
-    <p>&copy; 2025 Telly Crypto. All rights reserved.</p>
+    <div class="container">
+      <p>&copy; 2025 Telly Crypto — Built with 💡 by Taimoor Ali</p>
+    </div>
   </footer>
 </body>
 </html>
-```

@@ -6,11 +6,45 @@
   <title>Telly Crypto - Premium Signals</title>
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+    }
+    .hamburger span {
+      height: 3px;
+      width: 25px;
+      background: white;
+      margin: 4px 0;
+      transition: 0.4s;
+    }
+    @media (max-width: 768px) {
+      .hamburger {
+        display: flex;
+      }
+      .nav-menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: #111;
+        margin-top: 10px;
+      }
+      .nav-menu.show {
+        display: flex;
+      }
+    }
+  </style>
 </head>
 <body>
   <header class="main-header">
     <div class="container header-container">
       <h1 class="logo">Telly<span>Crypto</span></h1>
+      <div class="hamburger" onclick="document.querySelector('.nav-menu').classList.toggle('show')">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
       <nav>
         <ul class="nav-menu">
           <li><a href="#home">Home</a></li>

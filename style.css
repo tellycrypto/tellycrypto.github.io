@@ -4,12 +4,13 @@
   overflow: hidden;
   border-radius: 16px;
   margin-bottom: 30px;
+  max-height: 400px; /* ✅ Added to prevent black space */
 }
 
 /* --- Slider Movement --- */
 .slider {
   display: flex;
-  transition: transform 1s ease;
+  transition: transform 1.2s ease-in-out; /* ✅ Slower, smoother animation */
   width: 300%;
 }
 

@@ -1,29 +1,32 @@
-<section id="home">
-  <div class="slider-container">
-    <div class="slider" id="slider">
-      <div class="slide"><img src="https://i.ibb.co/ksfjVG3f/f9035164-4d4f-40bc-8b87-0454256b7ff4.jpg" alt="Slide 1" /></div>
-      <div class="slide"><img src="https://i.ibb.co/4g4hx12f/8d16077e-5c82-4c4d-9811-c879c880a503-1.jpg" alt="Slide 2" /></div>
-      <div class="slide"><img src="https://i.ibb.co/PGfzc9yJ/69a07ccb-a063-4cad-879f-89040993b11b.jpg" alt="Slide 3" /></div>
-    </div>
-  </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Telly Crypto Signals</title>
+  <style>
+    body { font-family: Arial; margin: 20px; background: #f5f5f5; }
+    header { background: #111; color: #fff; padding: 20px; }
+    nav a { margin-right: 15px; color: #fff; text-decoration: none; }
+    section { background: #fff; padding: 20px; margin-top: 10px; }
+    table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+    th, td { padding: 10px; border: 1px solid #ccc; }
+  </style>
+</head>
+<body>
 
-  <div class="card">
-    <h2>Welcome to <span class="highlight">Telly Crypto</span></h2>
-    <p>Your trusted source for high-accuracy crypto trading signals. With years of market experience, we help traders maximize profits using calculated strategies and real-time alerts. This platform is designed to look and feel like it was crafted by the world’s best developers — built with the help of AI tools and crafted by Taimoor Ali 🌍✨</p>
-  </div>
+<header>
+  <h1>Telly Crypto</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="trades.html">Trade Results</a>
+    <a href="premium.html">Premium Group</a>
+  </nav>
+</header>
+
+<section>
+  <h2>Welcome to Telly Crypto</h2>
+  <p>I'm a professional crypto trader sharing real results and premium signals.</p>
 </section>
 
-<script>
-  let current = 0;
-  const slides = document.querySelectorAll('.slide');
-  const slider = document.getElementById('slider');
-
-  function showSlide(index) {
-    slider.style.transform = `translateX(-${index * 100}%)`;
-  }
-
-  setInterval(() => {
-    current = (current + 1) % slides.length;
-    showSlide(current);
-  }, 7000); // 7 second delay for smooth viewing
-</script>
+</body>
+</html>

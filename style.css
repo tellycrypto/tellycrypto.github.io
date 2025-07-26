@@ -1,70 +1,96 @@
-body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+* {
   margin: 0;
   padding: 0;
-  background: #0f0f0f;
-  color: #fff;
+  box-sizing: border-box;
 }
-header {
-  background: linear-gradient(to right, #00c6ff, #0072ff);
-  padding: 20px;
-  text-align: center;
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #0e0e0e;
+  color: #ffffff;
+  line-height: 1.6;
 }
-header h1 {
-  margin: 0;
-  font-size: 2.2em;
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
 }
-nav {
-  margin-top: 10px;
+.main-header {
+  background: #111;
+  padding: 20px 0;
+  border-bottom: 2px solid #00c6ff;
+}
+.logo {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #00c6ff;
+}
+.logo span {
+  color: #ffffff;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
 }
 nav a {
-  margin: 0 15px;
-  color: white;
+  color: #fff;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 600;
+  transition: color 0.3s ease;
 }
-section {
-  padding: 30px 20px;
+nav a:hover {
+  color: #00c6ff;
 }
-.hero {
+.hero-section {
+  padding: 60px 0;
+  background: linear-gradient(to right, #00c6ff, #0072ff);
   text-align: center;
 }
+.hero-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+.hero-section p {
+  font-size: 1.2rem;
+  color: #e0e0e0;
+}
+.results-section, .premium-section, .contact-section {
+  padding: 50px 0;
+}
 h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
   color: #00ff9d;
 }
-table {
+.card-table table {
   width: 100%;
   border-collapse: collapse;
-  margin-top: 15px;
 }
-th, td {
-  padding: 12px;
+.card-table th, .card-table td {
+  padding: 15px;
   border: 1px solid #333;
   text-align: center;
 }
-footer {
+.premium-card {
+  background: #1c1c1c;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,198,255,0.2);
+}
+.main-footer {
   background: #111;
-  text-align: center;
   padding: 20px;
+  text-align: center;
+  color: #888;
   margin-top: 40px;
-  color: #aaa;
 }
 @media (max-width: 768px) {
-  nav a {
-    display: block;
-    margin: 10px 0;
+  nav ul {
+    flex-direction: column;
+    align-items: center;
   }
-  table, thead, tbody, th, td, tr {
-    display: block;
-  }
-  th, td {
-    text-align: right;
-    padding-left: 50%;
-    position: relative;
-  }
-  th::before, td::before {
-    position: absolute;
-    left: 10px;
-    white-space: nowrap;
+  .hero-section h2 {
+    font-size: 1.8rem;
   }
 }

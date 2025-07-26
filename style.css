@@ -1,17 +1,18 @@
 /* --- Slider Container Styling --- */
 .slider-container {
   width: 100%;
+  max-height: 400px;
   overflow: hidden;
   border-radius: 16px;
   margin-bottom: 30px;
-  max-height: 400px; /* ✅ Added to prevent black space */
+  position: relative;
 }
 
 /* --- Slider Movement --- */
 .slider {
   display: flex;
-  transition: transform 1.2s ease-in-out; /* ✅ Slower, smoother animation */
   width: 300%;
+  transition: transform 1s ease-in-out;
 }
 
 /* --- Each Slide --- */
@@ -20,19 +21,18 @@
   flex-shrink: 0;
 }
 
-/* --- Image Styling (Fix Zoom) --- */
+/* --- Image Styling --- */
 .slide img {
   width: 100%;
-  height: auto;
+  height: 400px;
+  object-fit: cover;
   display: block;
-  max-height: 400px;
-  object-fit: contain;
   background-color: #000;
 }
 
 /* --- Responsive Fix --- */
 @media (max-width: 768px) {
   .slide img {
-    max-height: 250px;
+    height: 250px;
   }
 }

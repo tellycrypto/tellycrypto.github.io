@@ -94,11 +94,12 @@
       overflow: hidden;
       border-radius: 16px;
       margin-bottom: 30px;
+      position: relative;
     }
     .slider {
       display: flex;
-      transition: transform 1s ease;
       width: 300%;
+      transition: transform 1s ease-in-out;
     }
     .slide {
       width: 100%;
@@ -106,11 +107,10 @@
     }
     .slide img {
       width: 100%;
-      height: auto;
+      height: 100%;
       display: block;
+      object-fit: cover;
       max-height: 400px;
-      object-fit: contain;
-      background-color: #000;
     }
     @media (max-width: 768px) {
       header h1 {
@@ -192,10 +192,14 @@
   const slides = document.querySelectorAll('.slide');
   const slider = document.getElementById('slider');
 
+  function showSlide(index) {
+    slider.style.transform = `translateX(-${index * 100}%)`;
+  }
+
   setInterval(() => {
     current = (current + 1) % slides.length;
-    slider.style.transform = `translateX(-${current * 100}%)`;
-  }, 6000); // Slower speed: 6 seconds per slide
+    showSlide(current);
+  }, 6000);
 </script>
 
 </body>

@@ -6,132 +6,6 @@
   <title>Telly Crypto Signals</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
-  <style>
-    body {
-      font-family: 'Inter', sans-serif;
-      background-color: #0f0f0f;
-      color: #ffffff;
-      line-height: 1.6;
-      margin: 0;
-      padding: 0;
-    }
-    header {
-      background: linear-gradient(to right, #00c6ff, #0072ff);
-      padding: 30px 20px;
-      text-align: center;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-    }
-    header h1 {
-      font-size: 2.2rem;
-      font-weight: 700;
-    }
-    nav {
-      margin-top: 10px;
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-    }
-    nav a {
-      color: #fff;
-      margin: 0 10px;
-      text-decoration: none;
-      font-weight: 600;
-      font-size: 0.95rem;
-    }
-    section {
-      padding: 30px 15px;
-      max-width: 1100px;
-      margin: auto;
-    }
-    .card {
-      background-color: #1e1e1e;
-      border-radius: 16px;
-      box-shadow: 0 4px 25px rgba(0,0,0,0.5);
-      padding: 20px;
-      margin-bottom: 30px;
-      transition: transform 0.3s ease;
-    }
-    .card:hover {
-      transform: translateY(-5px);
-    }
-    .table-wrapper {
-      width: 100%;
-      overflow-x: auto;
-      -webkit-overflow-scrolling: touch;
-    }
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 20px;
-    }
-    th, td {
-      border: 1px solid #444;
-      padding: 10px;
-      text-align: center;
-      font-size: 0.95rem;
-      white-space: nowrap;
-    }
-    th {
-      background-color: #333;
-      font-weight: 600;
-    }
-    footer {
-      background: #111;
-      color: #aaa;
-      text-align: center;
-      padding: 15px;
-      margin-top: 40px;
-      font-size: 0.85rem;
-    }
-    .highlight {
-      color: #00ff9d;
-      font-weight: bold;
-    }
-    .slider-container {
-      width: 100%;
-      overflow: hidden;
-      border-radius: 16px;
-      margin-bottom: 30px;
-      position: relative;
-    }
-    .slider {
-      display: flex;
-      width: 300%;
-      transition: transform 1s ease-in-out;
-    }
-    .slide {
-      width: 100%;
-      flex-shrink: 0;
-    }
-    .slide img {
-      width: 100%;
-      height: auto;
-      display: block;
-      max-height: 400px;
-      object-fit: contain;
-    }
-    @media (max-width: 768px) {
-      header h1 {
-        font-size: 1.6rem;
-      }
-      .card {
-        padding: 15px;
-      }
-      nav a {
-        font-size: 0.85rem;
-        margin: 5px;
-      }
-      .slide img {
-        max-height: 250px;
-      }
-      th, td {
-        padding: 8px;
-        font-size: 0.85rem;
-      }
-    }
-  </style>
 </head>
 <body>
 
@@ -147,11 +21,12 @@
 <section id="home">
   <div class="slider-container">
     <div class="slider" id="slider">
-      <div class="slide"><img src="https://i.ibb.co/ksfjVG3f/f9035164-4d4f-40bc-8b87-0454256b7ff4.jpg" alt="Slide 1"></div>
-      <div class="slide"><img src="https://i.ibb.co/4g4hx12f/8d16077e-5c82-4c4d-9811-c879c880a503-1.jpg" alt="Slide 2"></div>
-      <div class="slide"><img src="https://i.ibb.co/PGfzc9yJ/69a07ccb-a063-4cad-879f-89040993b11b.jpg" alt="Slide 3"></div>
+      <div class="slide"><img src="https://i.ibb.co/ksfjVG3f/f9035164-4d4f-40bc-8b87-0454256b7ff4.jpg" alt="Slide 1" /></div>
+      <div class="slide"><img src="https://i.ibb.co/4g4hx12f/8d16077e-5c82-4c4d-9811-c879c880a503-1.jpg" alt="Slide 2" /></div>
+      <div class="slide"><img src="https://i.ibb.co/PGfzc9yJ/69a07ccb-a063-4cad-879f-89040993b11b.jpg" alt="Slide 3" /></div>
     </div>
   </div>
+
   <div class="card">
     <h2>Welcome to <span class="highlight">Telly Crypto</span></h2>
     <p>Your trusted source for high-accuracy crypto trading signals. With years of market experience, we help traders maximize profits using calculated strategies and real-time alerts. This platform is designed to look and feel like it was crafted by the world’s best developers — built with the help of AI tools and crafted by Taimoor Ali 🌍✨</p>
@@ -161,16 +36,29 @@
 <section id="trades">
   <div class="card">
     <h2>📊 Recent Trade Results</h2>
-    <div class="table-wrapper">
-      <table>
-        <tr><th>Date</th><th>Coin</th><th>Type</th><th>Entry</th><th>TP</th><th>Result</th></tr>
-        <tr><td>2025-07-24</td><td>PEPE/USDT</td><td>Long</td><td>0.0142</td><td>0.0158</td><td class="highlight">+10%</td></tr>
-        <tr><td>2025-07-23</td><td>HOOK/USDT</td><td>Short</td><td>0.96</td><td>0.91</td><td class="highlight">+6%</td></tr>
-        <tr><td>2025-07-22</td><td>BTC/USDT</td><td>Long</td><td>29500</td><td>31000</td><td class="highlight">+5%</td></tr>
-        <tr><td>2025-07-21</td><td>ETH/USDT</td><td>Long</td><td>1800</td><td>1900</td><td class="highlight">+5.5%</td></tr>
-        <tr><td>2025-07-20</td><td>SOL/USDT</td><td>Short</td><td>27.5</td><td>25.0</td><td class="highlight">+9%</td></tr>
-      </table>
-    </div>
+    <table>
+      <tr><th>Coin</th><th>Type</th><th>Entry</th><th>Target</th><th>Status</th></tr>
+      <tr><td>BTC/USDT</td><td>Long</td><td>28,500</td><td>30,000</td><td>✅ Hit</td></tr>
+      <tr><td>ETH/USDT</td><td>Short</td><td>1,900</td><td>1,780</td><td>✅ Hit</td></tr>
+      <tr><td>BNB/USDT</td><td>Long</td><td>250</td><td>270</td><td>❌ SL</td></tr>
+      <tr><td>XRP/USDT</td><td>Long</td><td>0.55</td><td>0.62</td><td>✅ Hit</td></tr>
+      <tr><td>ADA/USDT</td><td>Short</td><td>0.38</td><td>0.34</td><td>✅ Hit</td></tr>
+      <tr><td>SOL/USDT</td><td>Long</td><td>22</td><td>26</td><td>✅ Hit</td></tr>
+      <tr><td>DOT/USDT</td><td>Short</td><td>6.5</td><td>5.8</td><td>✅ Hit</td></tr>
+      <tr><td>LINK/USDT</td><td>Long</td><td>7.2</td><td>8.0</td><td>✅ Hit</td></tr>
+      <tr><td>MATIC/USDT</td><td>Short</td><td>0.85</td><td>0.75</td><td>✅ Hit</td></tr>
+      <tr><td>AVAX/USDT</td><td>Long</td><td>13</td><td>15</td><td>✅ Hit</td></tr>
+      <tr><td>LTC/USDT</td><td>Long</td><td>70</td><td>78</td><td>✅ Hit</td></tr>
+      <tr><td>TRX/USDT</td><td>Short</td><td>0.088</td><td>0.082</td><td>✅ Hit</td></tr>
+      <tr><td>PEPE/USDT</td><td>Long</td><td>0.0000012</td><td>0.0000015</td><td>✅ Hit</td></tr>
+      <tr><td>SHIB/USDT</td><td>Short</td><td>0.000008</td><td>0.000007</td><td>✅ Hit</td></tr>
+      <tr><td>DOGE/USDT</td><td>Long</td><td>0.065</td><td>0.072</td><td>✅ Hit</td></tr>
+      <tr><td>APT/USDT</td><td>Short</td><td>6.9</td><td>6.2</td><td>✅ Hit</td></tr>
+      <tr><td>INJ/USDT</td><td>Long</td><td>8</td><td>9.5</td><td>✅ Hit</td></tr>
+      <tr><td>FET/USDT</td><td>Short</td><td>1.2</td><td>1.0</td><td>✅ Hit</td></tr>
+      <tr><td>GALA/USDT</td><td>Long</td><td>0.025</td><td>0.030</td><td>✅ Hit</td></tr>
+      <tr><td>AR/USDT</td><td>Short</td><td>30</td><td>26</td><td>✅ Hit</td></tr>
+    </table>
   </div>
 </section>
 
@@ -188,18 +76,19 @@
 </footer>
 
 <script>
-  let current = 0;
-  const slides = document.querySelectorAll('.slide');
   const slider = document.getElementById('slider');
+  const slides = document.querySelectorAll('.slide');
+  let index = 0;
 
-  function showSlide(index) {
+  function nextSlide() {
+    index++;
+    if (index >= slides.length) {
+      index = 0;
+    }
     slider.style.transform = `translateX(-${index * 100}%)`;
   }
 
-  setInterval(() => {
-    current = (current + 1) % slides.length;
-    showSlide(current);
-  }, 6000);
+  setInterval(nextSlide, 6000); // each image stays for 6 seconds
 </script>
 
 </body>

@@ -1,77 +1,24 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Telly Crypto Signals</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/style.css" />
+  <meta charset="UTF-8">
+  <title>Telly Crypto</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
 <header>
-  <h1>Telly Crypto Signals</h1>
+  <h1>Telly Crypto</h1>
   <nav>
-    <a href="#home">Home</a>
-    <a href="#trades">Trade Results</a>
-    <a href="#premium">Premium Group</a>
+    <a href="index.html">Home</a>
+    <a href="trades.html">Trade Results</a>
+    <a href="premium.html">Premium Group</a>
   </nav>
 </header>
 
-<section id="home">
-  <div class="slider-container">
-    <div class="slider" id="slider">
-      <div class="slide"><img src="https://i.postimg.cc/5ths9JVB/b9216123-1f5a-43ee-a4b7-c684dccc4e0c.jpg" alt="Crypto 1"></div>
-      <div class="slide"><img src="https://i.postimg.cc/TYdC3QZ4/5c13c7e6-c966-45cd-9382-5ec39eaf5ad0.jpg" alt="Crypto 2"></div>
-      <div class="slide"><img src="https://i.postimg.cc/8zs4hckd/59c5f8b9-8ca7-4b8f-979d-6399dec225c3.jpg" alt="Crypto 3"></div>
-    </div>
-  </div>
-  <div class="card">
-    <h2>Welcome to <span class="highlight">Telly Crypto</span></h2>
-    <p>Your trusted source for high-accuracy crypto trading signals. With years of market experience, we help traders maximize profits using calculated strategies and real-time alerts. This platform is designed to look and feel like it was crafted by the world’s best developers — built with the help of AI tools and crafted by Taimoor Ali 🌍✨</p>
-  </div>
+<section>
+  <h2>Welcome to Telly Crypto</h2>
+  <p>I'm a professional crypto trader sharing real results and premium signals.</p>
 </section>
-
-<section id="trades">
-  <div class="card">
-    <h2>📊 Recent Trade Results</h2>
-    <table>
-      <tr><th>Coin</th><th>Type</th><th>Entry</th><th>Target</th><th>Status</th></tr>
-      <tr><td>BTC/USDT</td><td>Long</td><td>28,500</td><td>30,000</td><td>✅ Hit</td></tr>
-      <tr><td>ETH/USDT</td><td>Short</td><td>1,900</td><td>1,780</td><td>✅ Hit</td></tr>
-      <tr><td>BNB/USDT</td><td>Long</td><td>250</td><td>270</td><td>❌ SL</td></tr>
-      <tr><td>XRP/USDT</td><td>Long</td><td>0.55</td><td>0.62</td><td>✅ Hit</td></tr>
-      <tr><td>ADA/USDT</td><td>Short</td><td>0.38</td><td>0.34</td><td>✅ Hit</td></tr>
-    </table>
-  </div>
-</section>
-
-<section id="premium">
-  <div class="card">
-    <h2>💎 Join Our Premium Group</h2>
-    <p>Gain exclusive access to daily high-accuracy signals with detailed SL/TP levels, proper risk management, and real-time alerts.</p>
-    <p>💬 Contact us via WhatsApp or Telegram: <span class="highlight">+92XXXXXXXXXX</span></p>
-    <p>🎯 Accuracy Rate: <span class="highlight">95%+</span></p>
-  </div>
-</section>
-
-<footer>
-  <p>&copy; 2025 Telly Crypto. Designed by Taimoor Ali – Crypto Analyst & Pro Developer 💻🚀</p>
-</footer>
-
-<script>
-  const slider = document.getElementById('slider');
-  const slides = document.querySelectorAll('.slide');
-  let index = 0;
-
-  function nextSlide() {
-    index++;
-    if (index >= slides.length) index = 0;
-    slider.style.transform = `translateX(-${index * 100}%)`;
-  }
-
-  setInterval(nextSlide, 5000);
-</script>
-
 </body>
 </html>

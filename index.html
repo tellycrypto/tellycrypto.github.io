@@ -78,6 +78,28 @@
       0% { opacity: 0; transform: translateY(20px); }
       100% { opacity: 1; transform: translateY(0); }
     }
+    /* Responsive trade cards */
+    @media (max-width: 768px) {
+      table {
+        display: none;
+      }
+      .trade-cards {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 15px;
+      }
+      .trade-card {
+        background: #1a1a1a;
+        border: 1px solid #333;
+        border-radius: 10px;
+        padding: 15px;
+      }
+      .trade-card p {
+        margin: 5px 0;
+        font-size: 0.95rem;
+      }
+    }
   </style>
 </head>
 <body>
@@ -122,6 +144,29 @@
             <tr><td>BNB/USDT</td><td>Long</td><td>250</td><td>270</td><td>❌ SL</td></tr>
           </tbody>
         </table>
+        <div class="trade-cards">
+          <div class="trade-card">
+            <p><strong>Coin:</strong> BTC/USDT</p>
+            <p><strong>Type:</strong> Long</p>
+            <p><strong>Entry:</strong> 28,500</p>
+            <p><strong>Target:</strong> 30,000</p>
+            <p><strong>Status:</strong> ✅ Hit</p>
+          </div>
+          <div class="trade-card">
+            <p><strong>Coin:</strong> ETH/USDT</p>
+            <p><strong>Type:</strong> Short</p>
+            <p><strong>Entry:</strong> 1,900</p>
+            <p><strong>Target:</strong> 1,780</p>
+            <p><strong>Status:</strong> ✅ Hit</p>
+          </div>
+          <div class="trade-card">
+            <p><strong>Coin:</strong> BNB/USDT</p>
+            <p><strong>Type:</strong> Long</p>
+            <p><strong>Entry:</strong> 250</p>
+            <p><strong>Target:</strong> 270</p>
+            <p><strong>Status:</strong> ❌ SL</p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
